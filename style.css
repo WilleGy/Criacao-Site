@@ -1,0 +1,1142 @@
+*{
+    padding: 0;
+    margin: 0;
+    transition: 0.4s;
+}
+
+body{
+    background-color: #e9e9e9;
+    font-family: 'Nunito Sans', "Poppins";
+}
+
+main{
+    box-sizing: border-box;
+    padding: 0 5vw;
+}
+
+/*Anúncio inicial da página inicial*/
+
+#anuncio_pagina_inicial{
+    width: 100%;
+}
+
+#anuncio_pagina_inicial>img{
+    width: 100%;
+}
+
+/*Conteúdo principal do site, o corpo*/
+
+.conteudo_pagina_inicial{
+    padding: 0 5vw 14vh 5vw;
+}
+
+/*Sessão de escolha de categoria desejada do usúario*/
+
+.titulo_variedade_modelos{
+    font-size: 1.7vw;
+    font-weight: 700;
+    color: #747474;
+    opacity: 90%;
+    margin-bottom: 5vh;
+    margin-top: 4vh;
+}
+
+.categoria_de_carro{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.categoria_de_carro>a{
+    text-decoration: none;
+    display: inline-block;
+    background-color: white;
+    width: 15%;
+    height: auto;
+    box-sizing: border-box;
+    border-radius: 15px;
+    box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.5);
+    font-size: 1.5vw;
+    color: rgba(0, 0, 0, 0.8);
+    position: relative;
+}
+
+.categoria_de_carro>a>h5{
+    position: absolute;
+    bottom: 10%;
+    left: 11%;
+}
+
+.categoria_de_carro>a>img{
+    width: 100%;
+}
+.categoria_carro_virado{
+    transform: scaleX(-1);
+}
+
+#categoria2_crossover{
+    padding-top: 3.7%;
+}
+
+#categoria3_coupé{
+    padding-top: 2%;
+}
+
+#categoria4_picape{
+    padding-top: 3.7%;
+}
+
+#categoria5_sedan{
+    padding-top: 2.1%;
+}
+
+/*Página inicial, seleção da marca de carro interessada*/
+
+.marcas_de_carro{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 7%;
+}
+
+.marcas_de_carro>a{
+    box-sizing: border-box;
+    border: 4px solid #d9d9d9;
+    aspect-ratio: 1 / 1;
+    width: 13%;
+    display: inline-block;
+    background-color: #ffffff;
+    border-radius: 120px;
+    position: relative;
+}
+
+.marcas_de_carro img{
+    width: 7vw;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*Imagens demonstrativas de carros que a concessionária vende*/
+
+.titulo_texto_demonstrativo{
+    font-size: 2vw;
+    font-weight: 600;
+    margin: 9vh 0 6vh 0;
+    width: 100%;
+    text-align: center;
+}
+
+.parte_demonstrativa_pagina_inicial{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    background-color: red;
+    border-radius: 15px;
+    margin-bottom: 14vh;
+}
+
+.fotos_demonstrativas{
+    flex-grow: 1;
+    position: relative;
+    overflow: hidden;
+}
+
+#demonstracao_5{
+    order: -1;
+    flex-grow: 4;
+    background: linear-gradient(to bottom, transparent 50%, rgba(0,0,0,0.8) 100%),
+    url(img/pag_inicial/philippe-toupet-bMgsIepVv_Q-unsplash.jpg) center/cover;
+    border-radius: 15px 0px 0px 15px;
+}
+
+#demonstracao_1{
+    background: linear-gradient(to bottom, transparent 50%, rgba(0,0,0,0.8) 100%),
+    url(img/pag_inicial/sven-d-a4S6KUuLeoM-unsplash.jpg) center/cover;
+}
+
+#demonstracao_2{
+    background: linear-gradient(to bottom, transparent 50%, rgba(0,0,0,0.8) 100%),
+    url(img/pag_inicial/martin-katler-rSYv6_n3RU8-unsplash.jpg) center/cover;
+}
+
+#demonstracao_3{
+    background: linear-gradient(to bottom, transparent 50%, rgba(0,0,0,0.8) 100%),
+    url(img/pag_inicial/jake-fagan-fnE8McnNSIc-unsplash.jpg) center/cover;
+}
+
+#demonstracao_4{
+    background: linear-gradient(to bottom, transparent 50%, rgba(0,0,0,0.8) 100%),
+    url(img/pag_inicial/arteum-ro-UfMb0M2RWjo-unsplash.jpg) center/cover;
+}
+
+.fotos_demonstrativas:hover{
+    flex-grow: 4;
+}
+
+.fotos_demonstrativas:hover~#demonstracao_5{
+    flex-grow: 1;
+}
+
+.fotos_demonstrativas:hover~#demonstracao_5:hover{
+    flex-grow: 4;
+}
+
+.concessionaria_perto_localizacao{
+    width: 100%;
+    height: 55vh;
+    display: flex;
+}
+
+.informar_localizacao{
+    width: 50%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 2% 12% 0 13%;
+    text-align: left;
+}
+
+/*Sessão de direcionamento de concessionária mais perto de acordo com a localização do usuário*/
+
+.informar_localizacao>h5{
+    font-size: 1.7em;
+    font-weight: 600;
+    text-align: left;
+    line-height: 1.2em;
+    margin-bottom: 1.1em;
+}
+
+.informar_localizacao>p{
+    font-size: 0.9em;
+    text-align: left;
+    margin-bottom: 1.8em;
+}
+
+.informar_localizacao>input{
+    border: 2px solid #5E02DE;
+    background-color: white;
+    border-radius: 5px;
+    width: 100%;
+    aspect-ratio: 16 / 2;
+    padding-left: 5%;
+    box-sizing: border-box;
+}
+
+.informar_localizacao>input::placeholder{
+    color: #5E02DE;
+}
+
+.concessionaria_perto_foto{
+    width: 45%;
+    height: 100%;
+    background-image: url(img/pag_inicial/nikola-johnny-mirkovic-ojrm4kId_MY-unsplash.jpg);
+    background-size: cover;
+    background-position-y: 60%;
+}
+
+/*Segunda página: Aborda sobre quem somos e o porque nos escolher*/
+
+/*Texto principal abordando sobre a empresa da página de quem somos*/
+
+.conteudo_principal_quem_somos{
+    width: 100%;
+    aspect-ratio: 10 / 6;
+    box-sizing: border-box;
+    padding-top: 10vh;
+}
+
+.imagem_principal_quem{
+    float: right;
+    width: 40%;
+    margin-left: 4vw;
+    margin-bottom: 3%;
+    border-radius: 20px;
+}
+
+.titulo_quem_somos{
+    font-weight: 400;
+    font-size: 2.3vw;
+    line-height: 110%;
+    margin-bottom: 2%;
+}
+
+.texto_sobre_empresa{
+    margin-bottom: 1.3%;
+    color: #747474;
+    font-weight: 300;
+    font-size: 1.12vw;
+}
+
+/*Tópicos de porque escolher a nossa empresa e o que ela oferece de bom pro usuário*/
+
+.porque_nossa_empresa{
+    width: 100%;
+    aspect-ratio: 10 / 5;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5% 10%;
+    box-sizing: border-box;
+    justify-content: space-between;
+}
+
+.porque_nossa_empresa>h3{
+    width: 100%;
+    aspect-ratio: 20 / 1;
+    margin-bottom: 5%;
+    text-align: center;
+    font-size: 2vw;
+    font-weight: 500;
+}
+
+.motivos_porque_nos{
+    width: 28%;
+    aspect-ratio: 10 / 14;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.25);
+}
+
+.motivos_porque_nos>div{
+    width: 100%;
+    aspect-ratio: 10 / 6;
+    border-radius: 15px;
+    margin-bottom: 5%;
+}
+
+.motivos_porque_nos>h4{
+    width: 100%;
+    text-align: center;
+    font-size: 1.3vw;
+    font-weight: 600;
+    margin-bottom: 5%;
+}
+
+.motivos_porque_nos>p{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0% 9%;
+    font-size: 500;
+    font-size: 1.1vw;
+}
+
+#motivo1{
+    background-image: url(img/quem/alex-suprun-A53o1drQS2k-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#motivo2{
+    background-image: url(img/quem/linkedin-sales-solutions-46bom4lObsA-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#motivo3{
+    background-image: url(img/quem/peter-broomfield-m3m-lnR90uM-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+/*Segunda página | Terceita página: Páginas de cadastro e de Login para iniciar sessão no site*/
+
+/*Imagem de fundo das páginas de cadastro e de login*/
+
+.background_img_cadastro{
+    position: fixed;
+    bottom: -13%;
+    width: 80%;
+    z-index: -99;
+}
+
+/*Parte de colocar dados e sua informações para conseguir ter login*/
+
+.aba_cadastro{
+    width: 24%;
+    background-color: #f9f9f9;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 3% 2.5vw;
+    margin-left: 75vw;
+}
+
+.marca_empresa_login_cadastro{
+    font-size: 2.5vw;
+    font-weight: 500;
+    color: #FA0A46;
+    margin-bottom: 7%;
+}
+
+.entrar_na_conta{
+    font-size: 1.2vw;
+    font-weight: 500;
+    margin-bottom: 10%;
+}
+
+.informacoes_conta{
+    width: 90%;
+    aspect-ratio: 14 / 2;
+    margin-bottom: 4%;
+    border: 2px solid #d9d9d9;
+    border-radius: 5px;
+    box-sizing: border-box;
+    padding-left: 5%;
+}
+
+.informacoes_conta::placeholder{
+    font-size: 1vw;
+    font-weight: 600;
+    color: #d5d5d5;
+}
+
+.aba_cadastro>p{
+    text-align: left;
+    font-size: 1vw;
+    margin: 5% 0 15% 0;
+}
+
+.entrar_numa_conta{
+    padding: 3.5% 28%;
+    background-color: #FA0A46;
+    text-decoration: none;
+    font-size: 1.2vw;
+    font-weight: 600;
+    color: white;
+    border-radius: 5px;
+}
+
+.alternativa_login_cadastro{
+    margin-top: 7%;
+    font: 1vw;
+}
+
+.aba_cadastro>div{
+    border: 2px solid #d9d9d9;
+    height: 0px;
+    margin-bottom: 15%;
+    margin-top: 15%;
+    color: #747474;
+}
+
+.entrar_outro_jeito{
+    display: block;
+    margin-bottom: 8%;
+    padding: 3.5% 10%;
+    border: 2px solid #FA0A46;
+    border-radius: 7px;
+    color: #FA0A46;
+    text-decoration: none;
+    font-size: 1.2vw;
+    font-weight: 600;
+}
+
+.aba_login{
+    width: 24%;
+    background-color: #f9f9f9;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 3% 2.5vw 11.5% 2.5vw;
+    margin-left: 75vw;
+}
+
+#entrar_logado{
+    margin-bottom: 15%;
+}
+
+.aba_login>p{
+    text-align: left;
+    font-size: 1vw;
+    margin: 5% 0 15% 0;
+}
+
+.aba_login>div{
+    border: 2px solid #d9d9d9;
+    height: 0px;
+    margin-bottom: 15%;
+    margin-top: 15%;
+    color: #747474;
+}
+
+/*Quarta página | Quinta página: Grade de produto e Grade de busca de Produto informações do produto*/
+
+/*Anúncio do topo do site na sessão de grade de produtos e página de busca*/
+
+.grade_produtos_oficial{
+    padding: 4vh 3vw;
+    display: grid;
+    grid-template-columns: 3fr 7fr;
+    gap: 30px;
+}
+
+.anuncio_grade_produto{
+    background-color: red;
+    width: 80%;
+    height: 25vh;
+    margin-left: 10vw;
+    background-image: url(img/Grade_produtos/Banner\ horizontal\ promoção\ black\ friday\ chique\ em\ branco\ e\ preto.png);
+    background-position: center;
+    background-size: 50vw;
+    margin-top: 4vh;
+}
+
+.escolher_tipo_veiculo{
+    width: 100%;
+    background-color: white;
+    margin-top: 15vh;
+    border-radius: 15px;
+    height: 109vh;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.escolher_tipo_veiculo>div{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 2vh 2vw;
+}
+
+.escolher_tipo_veiculo h2{
+    font: 1.5vw;
+    color: #555555;
+    margin-bottom: 1.3vh;
+}
+
+.categoria_veiculo{
+    height: 18vh;
+    border-bottom: 2px solid #d9d9d9;
+}
+
+.categoria_veiculo>input{
+    height: 5vh;
+    width: 90%;
+    border: 2px solid #5E02DE;
+    border-radius: 5px;
+}
+
+.marca_veiculo{
+    border-bottom: 2px solid #d9d9d9;
+    height: 27vh;
+}
+
+.marca_veiculo>ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.marca_veiculo li{
+    width: 7vw;
+    border: 2px solid #5E02DE;
+    list-style: none;
+    height: 5vh;
+    border-radius: 5px;
+    color: #5E02DE;
+    box-sizing: border-box;
+    padding: 0.8% 0;
+    text-align: center;
+}
+
+.preco_maximo_minimo_veiculo{
+    height: 19vh;
+    border-bottom: 2px solid #d9d9d9;
+}
+
+.preco_maximo_minimo_veiculo>input{
+    width: 43%;
+    margin-right: 1vw;
+    height: 5vh;
+    border: 2px solid #5E02DE;
+    box-sizing: border-box;
+    padding-left: 1vw;
+}
+
+.preco_maximo_minimo_veiculo>input::placeholder{
+    color: #5E02DE;
+    font-size: 1.1vw;
+    font-weight: 600;
+}
+
+.cor_veiculo{
+    box-sizing: border-box;
+    padding-right: 62% !important;
+}
+
+.cor_veiculo>div{
+    height: 28vh;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    column-gap: 15px;
+    row-gap: 5px;
+}
+
+.cor_veiculo input{
+    border: 2px solid #5E02DE;
+    height: 2.5vh;
+    border-radius: 5px;
+}
+
+/*Título da página de busca que aparece o nome do que você pesquisou*/
+
+.busca_produto_title{
+    font-size: 1.6vw;
+    font-weight: 700;
+    color: #747474;
+    margin-left: 10vw;
+    margin-top: 4vh;
+}
+
+/*Quinta página: Informações e amostragem do produto escolhido*/
+
+.imagens_produto_escolhido{
+    width: 100%;
+    height: 42vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2vw;
+    grid-template-rows: 1fr;
+}
+
+.informacoes_produto{
+    display: grid;
+    grid-template-areas: 'informacoes confirmacao_pedido'
+    'itens_veiculo confirmacao_pedido';
+    gap: 40px;
+    grid-template-columns: 5fr 3fr;
+    width: 100%;
+    height: 94vh;
+}
+
+#informacoes_carro{
+    grid-area: informacoes;
+}
+
+#itens_veiculo{
+    grid-area: itens_veiculo;
+}
+
+.confirmacao_pedido{
+    grid-area: confirmacao_pedido;
+    padding: 4% 0 !important;
+}
+
+.informacoes_produto>section{
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    box-sizing: border-box;
+    padding: 4% 8%;
+    background-color: white;
+}
+
+.informacoes_principais_produto{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+    box-sizing: border-box;
+}
+
+.informacoes_principais_produto dt{
+    color: #FA0A46;
+    font-size: 1.2vw;
+    font-weight: 700;
+}
+
+.informacoes_principais_produto dd{
+    font-size: 1.2vw;
+}
+
+.info_produto>h3{
+    font-size: 1.4vw;
+    margin-bottom: 3%;
+    color: #FA0A46;
+}
+
+.info_produto>ul{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px 30px;
+}
+
+.info_produto>ul>li{
+    list-style: none;
+    font-size: 1.2vw;
+    font-weight: 500;
+    color: #747474;
+}
+
+.confirmacao_pedido>div{
+    border-bottom: 2px solid #d9d9d9;
+    box-sizing: border-box;
+    padding: 4% 8%;
+}
+
+.nome_modelo_produto>h2{
+    font-size: 2vw;
+}
+
+.nome_modelo_produto>h3{
+    font-size: 1.2vw;
+    font-weight: 400;
+}
+
+.valor_parcela_produto{
+    text-align: center;
+}
+
+.valor_parcela_produto>h2{
+    font-size: 1.5vw;
+}
+
+.valor_parcela_produto>h3{
+    font-size: 1.3vw;
+}
+
+.confirmacao_pedido>div>p{
+    font-size: 1.5vw;
+    font-weight: 400;
+}
+
+.parte_envio_informacoes{
+    box-sizing: border-box;
+    padding: 4% 9%;
+}
+
+.parte_envio_informacoes>p{
+    font-size: 1.2vw;
+    margin-bottom: 4%;
+}
+
+.parte_envio_informacoes>label{
+    font-size: 1.1vw;
+    display: block;
+    margin-bottom: 4%;
+}
+
+.parte_envio_informacoes input{
+    width: 100%;
+    box-sizing: border-box;
+    height: 6vh;
+    border: 2px solid #d9d9d9;
+    padding-left: 5%;
+    border-radius: 5px;
+}
+
+.parte_envio_informacoes input::placeholder{
+    font-size: 1.1vw;
+    font-weight: 600;
+    color: #797979;
+    opacity: 70%;
+}
+
+.enviar_pedido_compra{
+    width: 80%;
+    height: 6vh;
+    border: 2px solid #FA0A46 !important;
+    border-radius: 20px !important;
+    margin-top: 4vh;
+    padding: 0 !important;
+    background-color: white !important;
+}
+
+.enviar_pedido_compra[type="submit"]{
+    color: #FA0A46;
+    font-size: 1.2vw;
+    font-weight: 700;
+}
+
+.enviar_pedido_compra[type="submit"]:hover{
+    cursor: pointer;
+}
+
+/*Página de contato*/
+
+.pagina_principal_gostei{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    box-sizing: border-box;
+    gap: 30px;
+}
+
+.anuncio_contato{
+    background-image: url(img/anuncio_lateral.png);
+    background-size: cover;
+    background-position: center;
+}
+
+/*Sexta página: Página de contato e de envio de formulário pra empresa*/
+
+.img_area_contato{
+    height: 55vh;
+    width: 91%;
+    margin: 4vh 4vw;
+    background-color: red;
+    background-image: url(img/Banner\ para\ Site\ Black\ Friday\ das\ Joias\ e\ Acessórios\ Elegante\ Marrom\ e\ Bege\ \(1\).png);
+    background-position: center;
+    background-size: cover;
+}
+
+.parte_explicativa_falando_bem_atendimento{
+    margin-top: 4vh;
+    margin-bottom: 4vh;
+}
+
+.titulo_principal_atendimento{
+    width: 100%;
+    color: #000005;
+    text-align: center;
+    font-size: 1.8vw;
+    font-weight: 700;
+    margin-bottom: 3vh;
+}
+
+.texto_explicativo_atendimento{
+    font-size: 1.2vw;
+    font-weight: 400;
+    color: #000005;
+}
+
+.titulo_motivacional_atendimento{
+    font-size: 1.5vw;
+    font-weight: 600;
+    color: #555555;
+    margin: 1.5vh 0;
+
+}
+
+.pedido_formulario_contato{
+    max-width: 100%;
+    box-sizing: border-box;
+    padding: 6vh 4vw;
+    margin: 2vh 5vw;
+    border: 2px solid #797979;
+}
+
+.informacoes_conta_contato{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    margin-bottom: 2vh;
+    font-size: 1.3vw;
+    color: #747474;
+    height: 10vh;
+}
+
+.local_envio_informacoes_conta{
+    height: 5vh;
+    max-width: 100%;
+    border: 2px solid #797979;
+    border-radius: 5px;
+    box-sizing: border-box;
+
+}
+
+.local_envio_informacoes_conta::placeholder{
+    font-size: 120%;
+    font-weight: 500;
+    padding-left: 1.5%;
+}
+
+#descricao_area_contato{
+    height: 30vh !important;
+}
+
+#descricao_contato{
+    height: 25vh !important;
+}
+
+.categoria_contato_quer_receber{
+    width: 100%;
+    font-size: 1.5vw;
+    font-weight: 500;
+    color: #555555;
+    margin: 8vh 0 5vh 0;
+}
+
+.tipo_contato_quer_receber{
+    width: 3%;
+    margin-right: 2vw;
+    font-size: 1.1vw;
+}
+
+.enviar_formulario_contato{
+    display: block;
+    height: 5vh;
+    width: 80%;
+    margin-left: 6vw;
+    border: 1px solid #FA0A46;
+    background-color: #FA0A46;
+    margin-top: 8vh;
+    cursor: pointer;
+}
+
+.enviar_formulario_contato[type="submit"]{
+    color: white;
+    font-weight: 600;
+    font-size: 1.1vw;
+}
+
+/*CLasses usadas em outras páginas*/
+
+.fica_vermelho{
+    color: #FA0A46;
+    text-decoration: none;
+    font-weight: 800;
+}
+
+/*Cabeçalho do site, parte principal usuário*/
+
+.cabecalho_de_troca_pagina{
+    background-color: #ffffff;
+    height: 8.3vh;
+    width: 100%;
+    display: flex;
+    padding-top: 1vh;
+    box-sizing: border-box;
+}
+
+.nome_marca_cabecalho{
+    font-size: 2.2vw;
+    color: #5E02DE;
+    height: 5vh;
+    margin: 0 5vw 0 6vw;
+    width: 12vw;
+    text-decoration: none;
+}
+
+.barra_pesquisa_cabecalho{
+    height: 5vh;
+    margin-top: 0.2vh;
+    width: 30vw;
+    margin-right: 4vw;
+    position: relative;
+}
+
+.input_barra_pesquisa_cabecalho{
+    width: 99%;
+    height: 94%;
+    border-radius: 5px;
+    border: 2px solid #d9d9d9;
+    box-sizing: border-box;
+    padding-left: 2.2vw;
+}
+
+.svg_barra_pesquisa_lupa{
+    position: absolute;
+    width: 4%;
+    top: 20%;
+    left: 2%;
+}
+
+.botao_busca_barra_pesquisa{
+    position: absolute;
+    right: 4%;
+    top: 13%;
+    color: white;
+    background-color: #5E02DE;
+    padding: 0.2% 5%;
+    border-radius: 15px;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.numero_telefone_empresa_cabecalho{
+    background-color: #5E02DE;
+    color: #ffffff;
+    font-size: 1vw;
+    height: 5vh;
+    width: 11vw;
+    border-radius: 15px;
+    margin-left: 1.3vw;
+    margin-top: 0.5vh;
+    box-sizing: border-box;
+    padding: 1vh 0 0 0.7vw;
+}
+
+.numero_telefone_empresa_cabecalho>img{
+    width: 1.4vw;
+    vertical-align: middle;
+    margin-bottom: 0.3vh;
+    margin-right: 0.2vw;
+}
+
+.separador_cabecalho{
+    border-left: 2px solid #5E02DE;
+    height: 5vh;
+    margin-top: 0.4vh;
+    margin-left: 2vw;
+    margin-right: 2vw;
+}
+
+.cadastrar_carrinho_cabecalho{
+    display: inline-block;
+    height: 5.2vh;
+    width: 3vw;
+    margin-top: 0.3vh;
+    margin-right: 1vw;
+}
+
+.cadastrar_carrinho_cabecalho>img{
+    width: 2.3vw;
+}
+
+/*Cabecalho do site, parte navegação das páginas*/
+
+.mudanca_pagina{
+    height: 9vh;
+    background-color: #5E02DE;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    padding-left: 11vw;
+}
+
+.secoes_paginas{
+    display: flex;
+}
+
+.secoes_paginas>li{
+    list-style: none;
+    margin-right: 2.1vw;
+    padding: 0.5vh 0.5vw;
+}
+
+.secoes_paginas>li>a{
+    padding: 0.5vh 0.5vw;
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    font-size: 1em;
+}
+
+.mudanca_pagina>a{
+    width: 2vw;
+    height: 4.5vh;
+    display: inline-block;
+}
+
+.usuario_gostou{
+    margin-left: 17vw !important;
+}
+
+.usuario_notificacao_localizacao{
+    margin-left: 1.4vw;
+}
+
+.mudanca_pagina>a>svg{
+    width: 120%;
+    height: 100%;
+    fill: white;
+}
+
+/*Parte da grade de produto*/
+
+.grade_produtos{
+    max-width: 100%;
+    padding: 5vh 2vw;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.titulo_grade_produto{
+    margin-bottom: 3vh;
+    font-size: 1.7vw;
+    font-weight: 700;
+    color: #747474;
+    width: 100%;
+}
+
+.produtos_grade_produtos{
+    background-color: white;
+    flex: 1 1 250px;
+    height: 69vh;
+    border-radius: 15px;
+    position: relative;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+    max-width: 19vw;
+}
+
+.produtos_grade_produtos>img{
+    width: 100%;
+    border-radius: 15px;
+}
+
+.produtos_grade_produtos>h3{
+    font-size: 1.4vw;
+    font-weight: 800;
+    margin: 1.5vh 1.5vw;
+}
+
+.produtos_grade_produtos>h4{
+    font-size: 1.1vw;
+    font-weight: 600;
+    opacity: 80%;
+    margin: 0.7vh 1.5vw;
+}
+
+.produtos_grade_produtos>p{
+    display: inline-block;
+    font-size: 1.2vw;
+    font-weight: 700;
+    color: #747474;
+    margin-left: 1.5vw;
+    margin-right: 4vw;
+}
+
+.produtos_grade_produtos>span{
+    position: absolute;
+    bottom: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.4vw;
+    font-weight: 700;
+}
+
+.produtos_grade_produtos>a{
+    position: absolute;
+    bottom: 5%;
+    left: 18%;
+    padding: 3% 12.3%;
+    display: block;
+    text-decoration: none;
+    font-size: 1.3vw;
+    font-weight: 700;
+    color: white;
+    background-color: #FA0A46;
+    border-radius: 10px;
+}
+
+/*Parte final site*/
+
+.rodape {
+  background-color: #222;     
+  color: white;       
+  padding: 20px;
+  text-align: center;
+}
+
+.rodape-conteudo {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.rodape-links {
+  margin: 10px 0;
+}
+
+.rodape-links a {
+  color: #bbb;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.rodape-links a:hover {
+  color: white;
+}
+
+.redes-sociais svg {
+  width: 24px;
+  margin: 0 10px;
+  fill: #bbb;
+}
+
+.redes-sociais>a:hover>svg{
+    transform: scaleX(-1);
+    fill: white;
+}
